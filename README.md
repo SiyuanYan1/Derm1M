@@ -60,7 +60,7 @@ We provide two CLIP‑style checkpoints trained from scratch on **Derm1M**:
 | Task                                       | Metric    | DermLIP‑PanDerm |  Best Prior SOTA  |       Δ      |
 | :----------------------------------------- | :-------- | :-------------: | :---------------: | :----------: |
 | Zero‑shot classification (avg. 4 datasets) | Accuracy  |    **58.8 %**   | BiomedCLIP 44.1 % | **+14.7 pp** |
-| Few‑shot (1 % labels) linear probe         | Accuracy  |    **58.6 %**   |    MONET 53.0 %   |  **+5.6 pp** |
+| Few‑shot (10 % labels) linear probe         | Accuracy  |    **69.6 %**   |    MONET 66.9 %   |  **+2.7 pp** |
 | Cross‑modal retrieval (SkinCAP)            | R\@10 I→T |    **20.2 %**   |    MONET 14.2 %   |  **+6.0 pp** |
 
 *All metrics are taken directly from Tables 2–4 of the Derm1M paper.*
