@@ -25,7 +25,7 @@
 | **Skin conditions**          | 390 (4-level ontology)                                                                                                                    |
 | **Clinical concepts**        | 130                                                                                                                                       |
 | **Average caption length**   | ≈ 41 words                                                                                                                                |
-| **Image sources**            | YouTube (\~51 k videos), PubMed (\~566 k figures), medical forums (\~49 k posts), public dermatology datasets, teaching-slide collections |
+| **Image sources**            | YouTube (\~51 k videos), PubMed (\~566 k figures), medical forums (\~49 k posts), public datasets, teaching-slides |
 | **Ontology structure**       | Structured JSON                                                                                     |
 
 
