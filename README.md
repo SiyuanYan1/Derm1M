@@ -11,6 +11,9 @@
 ## ✨ TL;DR
 
 **Derm1M** brings **1,029,761 dermatological image–text pairs** -257× more than any previous dermatology vision‑language corpus—covering **390 skin conditions** and **130 clinical concepts** organised in a four‑level expert ontology. The dataset’s rich contextual captions (mean = 41 tokens) include metadata and other clinical contexts, enabling explainable multimodal learning, zero‑/few‑shot diagnosis, cross‑modal retrieval, and visual question answering in realistic settings.
+<p align="center">
+  <img src="overview.png" alt="Derm1M overview" width="800">
+</p>
 
 | **Aspect**                   | Derm1M                                                                                                                                    |
 | ---------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
@@ -23,11 +26,9 @@
 | **Clinical concepts**        | 130                                                                                                                                       |
 | **Average caption length**   | ≈ 41 words                                                                                                                                |
 | **Image sources**            | YouTube (\~51 k videos), PubMed (\~566 k figures), medical forums (\~49 k posts), public dermatology datasets, teaching-slide collections |
-| **Ontology structure**       | Structured JSON + graph (disease ⇌ concept ⇌ finding)                                                                                     |
+| **Ontology structure**       | Structured JSON                                                                                     |
 
-<p align="center">
-  <img src="overview.png" alt="Derm1M overview" width="800">
-</p>
+
 
 ## 🔑 Key Features
 
