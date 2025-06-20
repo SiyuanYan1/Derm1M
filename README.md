@@ -1,11 +1,12 @@
 # Derm1M: A Million-Scale Vision-Language Dataset Aligned with Clinical Ontology Knowledge for Dermatology
-[![Arxiv Paper](https://img.shields.io/badge/Arxiv-Paper-red)](https://arxiv.org/abs/2503.14911) 
+[![Arxiv Paper](https://img.shields.io/badge/Arxiv-Paper-red)](https://arxiv.org/abs/2503.14911) 
 [![Cite](https://img.shields.io/badge/Cite-BibTeX-blue)](#citation)
 
 The dataset and code will be publicly available upon acceptance.
 
-
-![Overview of Derm1M Dataset](overview.png)
+<div align="center">
+  <img src="overview.png" alt="Overview of Derm1M Dataset" width="80%"/>
+</div>
 
 ## Citation
 
