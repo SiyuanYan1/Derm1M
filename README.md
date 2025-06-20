@@ -1,7 +1,8 @@
 # Derm1M: A Million‑Scale Vision‑Language Dataset Aligned with Clinical Ontology Knowledge for Dermatology
 [![ArXiv](https://img.shields.io/badge/arXiv-2503.14911-b31b1b)](https://arxiv.org/abs/2503.14911)
-[![License](https://img.shields.io/badge/License-CC%20BY--NC%204.0-green)](#license)
-[![Cite](https://img.shields.io/badge/Cite-BibTeX-blue)](#citation)
+[![License](https://img.shields.io/badge/License-CC%20BY--NC%204.0-green)](#user-content-license)
+[![Cite](https://img.shields.io/badge/Cite-BibTeX-blue)](#user-content-citation)
+
 
 
 > ⚠️ **Repo under construction**
@@ -26,7 +27,7 @@
 | **Skin conditions**          | 390 (4-level ontology)                                                                                                                    |
 | **Clinical concepts**        | 130                                                                                                                                       |
 | **Average caption length**   | ≈ 41 words                                                                                                                                |
-| **Image sources**            | YouTube, PubMed, medical forums, public datasets, teaching-slides |
+| **Image sources**            | YouTube, PubMed, medical forums, public datasets, teaching slides |
 | **Ontology structure**       | Structured JSON                                                                                     |
 
 
