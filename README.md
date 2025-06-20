@@ -1,19 +1,20 @@
 # Derm1M: A Million-Scale Vision–Language Dataset Aligned with Clinical Ontology Knowledge for Dermatology
-[![arXiv](https://img.shields.io/badge/arXiv-2503.14911-b31b1b)](https://arxiv.org/abs/2503.14911)
-[![License](https://img.shields.io/badge/License-CC%20BY--NC%204.0-green)](#-license)
-[![Cite](https://img.shields.io/badge/Cite-BibTeX-blue)](#-citation)
+[![ArXiv](https://img.shields.io/badge/arXiv-2503.14911-b31b1b)](https://arxiv.org/abs/2503.14911)
+[![License](https://img.shields.io/badge/License-CC%20BY--NC%204.0-green)](#🛡️-license)
+[![Cite](https://img.shields.io/badge/Cite-BibTeX-blue)](#📚-citation)
 
 > ⚠️ **Repository under construction**  
-> Weights, training & inference scripts, and dataset access will be released upon paper acceptance.
+> Weights, training / inference scripts and dataset access will be released upon paper acceptance.
 
 ---
 
 ## ✨ TL;DR
-**Derm1M** brings **1,029,761 dermatological image–text pairs**—∼257 × larger than any previous dermatology V + L corpus—covering **390 skin conditions** and **130 clinical concepts** arranged in a four-level expert ontology. The rich captions (mean ≈ 41 tokens) embed metadata and physician-friendly concepts, enabling trustworthy multimodal learning, zero-/few-shot diagnosis, cross-modal retrieval and VQA in realistic settings.
+**Derm1M** delivers **1,029,761 dermatological image–text pairs**—≈ 257 × larger than any prior dermatology V + L corpus—covering **390 skin conditions** and **130 clinical concepts** in a four-level expert ontology. Captions average 41 tokens and embed rich clinical context, enabling trustworthy multimodal learning, zero-/few-shot diagnosis, cross-modal retrieval and VQA in realistic settings.
 
 <p align="center">
-  <img src="overview.png" alt="Derm1M overview" width="900">
+  <img src="overview.png" alt="Derm1M overview" width="000">
 </p>
+---
 
 | **Aspect** | Derm1M |
 |-----------|--------|
@@ -25,7 +26,7 @@
 | **Skin conditions** | 390 (4-level ontology) |
 | **Clinical concepts** | 130 |
 | **Average caption length** | ≈ 41 words |
-| **Image sources** | YouTube (∼51 k videos), PubMed (∼566 k figures), medical forums (∼49 k posts), public dermatology datasets, teaching-slide collections |
+| **Image sources** | YouTube (≈ 51 k videos), PubMed (≈ 566 k figures), medical forums (≈ 49 k posts), public dermatology datasets, teaching-slide collections |
 | **Ontology structure** | Structured JSON + graph (disease ⇌ concept ⇌ finding) |
 
 ---
@@ -34,18 +35,19 @@
 - **Scale that matters** – 1 M+ pairs enable CLIP-style dermatology VL models.  
 - **Comprehensive coverage** – 390 conditions spanning inflammatory, infectious, neoplastic & genodermatoses.  
 - **Rich context & concepts** – 130 clinician-understandable concepts enhance explainability.  
-- **Expert-curated ontology** – Four board-certified dermatologists built a four-level hierarchy.  
+- **Expert-curated ontology** – Built by four board-certified dermatologists.  
 - **Benchmark-ready splits** – Eight downstream datasets for plug-and-play evaluation.  
 
 ---
 
 ## 🏗️ Repository Layout
-```text
-dataset_root/
-├── images/            # JPEG / PNG images
-├── captions.csv       # text + metadata per image
-├── ontology.json      # disease & concept hierarchy
-└── splits/            # train/val indices
+    dataset_root/
+    ├── images/            # JPEG / PNG images
+    ├── captions.csv       # text + metadata per image
+    ├── ontology.json      # disease & concept hierarchy
+    └── splits/            # train / val indices
+
+---
 
 ## 🚀 Pre-trained Models: DermLIP
 | Model ID            | Vision Enc. | Text Enc. | Zero-shot Avg† | R@10 I→T (hold-out) |
@@ -95,5 +97,3 @@ The dataset is undergoing final review and will be released for **non-commercial
   pages   = {1--12},
   year    = {2025}
 }
-
-
