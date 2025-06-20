@@ -47,32 +47,38 @@ dataset_root/
 ├── ontology.json      # disease & concept hierarchy
 └── splits/            # train/val indices
 
-🚀 Pre-trained Models: DermLIP
-Model ID	Vision Enc.	Text Enc.	Zero-shot Avg†	R@10 I→T (hold-out)
-DermLIP-B/16	ViT-B/16	GPT-77	56.1 %	40.7 %
-DermLIP-PanDerm	PanDerm-B	PMB-256	58.8 %	59.9 %
+## 🚀 Pre-trained Models: DermLIP
+| Model ID            | Vision Enc. | Text Enc. | Zero-shot Avg† | R@10 I→T (hold-out) |
+|---------------------|-------------|-----------|---------------|---------------------|
+| DermLIP-B/16        | ViT-B/16    | GPT-77    | 56.1 %        | 40.7 %              |
+| **DermLIP-PanDerm** | PanDerm-B   | PMB-256   | **58.8 %**    | **59.9 %**          |
 
-📊 Key Benchmarks
-Task (avg.)	Metric	DermLIP-PanDerm	Best prior SOTA	Δ
-Zero-shot classification (4 datasets)	Accuracy	58.8 %	BiomedCLIP 44.1 %	+14.7 pp
-Few-shot (1 % labels) linear probe	Accuracy	58.6 %	MONET 53.0 %	+5.6 pp
-Cross-modal retrieval (SkinCAP)	R@10	20.2 %	MONET 14.2 %	+6.0 pp
+---
 
-Metrics from Tables 2–4 of the Derm1M paper.
+## 📊 Key Benchmarks
+| Task (avg.)                             | Metric   | DermLIP-PanDerm | Best prior SOTA | Δ |
+|-----------------------------------------|----------|:---------------:|:---------------:|:--:|
+| Zero-shot classification (4 datasets)   | Accuracy | **58.8 %**      | BiomedCLIP 44.1 % | **+14.7 pp** |
+| Few-shot (1 % labels) linear probe      | Accuracy | **58.6 %**      | MONET 53.0 %    | **+5.6 pp** |
+| Cross-modal retrieval (SkinCAP)         | R@10     | **20.2 %**      | MONET 14.2 %    | **+6.0 pp** |
 
-💾 Data Access
-The dataset is pending final review and will be released for non-commercial research under CC BY-NC 4.0. Join the wait-list or watch this repo for updates.
+*Metrics reproduced from Tables 2 – 4 of the Derm1M paper.*
 
-📝 Getting Started
-bash
-Copy
-Edit
-git clone https://github.com/SiyuanYan1/Derm1M.git
-conda env create -f environment.yml
-📚 Citation
-bibtex
-Copy
-Edit
+---
+
+## 💾 Data Access
+The dataset is undergoing final review and will be released for **non-commercial research under CC BY-NC 4.0**. Join the [wait-list](https://forms.gle/derm1m-access) or watch this repo for updates.
+
+---
+
+## 📝 Getting Started
+    git clone https://github.com/SiyuanYan1/Derm1M.git
+    conda env create -f environment.yml
+
+---
+
+## 📚 Citation
+```bibtex
 @misc{yan2025derm1m,
   title        = {Derm1M: A Million-Scale Vision–Language Dataset Aligned with Clinical Ontology Knowledge for Dermatology},
   author       = {Siyuan Yan and Ming Hu and Yiwen Jiang and Xieji Li and Hao Fei and Philipp Tschandl and Harald Kittler and Zongyuan Ge},
@@ -89,5 +95,5 @@ Edit
   pages   = {1--12},
   year    = {2025}
 }
-🛡️ License
-Derm1M is released under CC BY-NC 4.0. Commercial use requires separate permission.
+
+
