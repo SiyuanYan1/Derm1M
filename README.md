@@ -12,9 +12,10 @@
 **Derm1M** delivers **1,029,761 dermatological image–text pairs**—≈ 257 × larger than any prior dermatology V + L corpus—covering **390 skin conditions** and **130 clinical concepts** in a four-level expert ontology. Captions average 41 tokens and embed rich clinical context, enabling trustworthy multimodal learning, zero-/few-shot diagnosis, cross-modal retrieval and VQA in realistic settings.
 
 <p align="center">
-  <img src="overview.png" alt="Derm1M overview" width="000">
+  <img src="overview.png" alt="Derm1M overview" width="900">
 </p>
 
+---
 
 | **Aspect** | Derm1M |
 |-----------|--------|
