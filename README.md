@@ -22,9 +22,9 @@
 | Unique images             | 403 563                                                        |
 | Skin conditions           | 390 (4-level ontology)                                         |
 | Clinical concepts         | 130                                                            |
-| Average caption length    | ≈ 41 words                                                     |
-| Image sources             | YouTube, PubMed, medical forums, public datasets, teaching slides |
+| Average caption length    | 41 words                                                     |
 | Ontology structure        | Structured JSON                                                |
+| Image sources             | YouTube, PubMed, medical forums, public datasets, teaching slides |
 
 ## 🔑 Key Features
 
