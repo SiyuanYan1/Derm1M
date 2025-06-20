@@ -1,8 +1,13 @@
 # Derm1M: A Million‑Scale Vision‑Language Dataset Aligned with Clinical Ontology Knowledge for Dermatology
+# Derm1M: A Million‑Scale Vision‑Language Dataset Aligned with Clinical Ontology Knowledge for Dermatology
+
+> ⚠️ **Repo under construction**
+> Weights, training & inference scripts, and dataset access will be released upon paper acceptance.
+
 
 ## ✨ TL;DR
 
-**Derm1M** brings **1,029,761 dermatologist‑curated image–text pairs**—257× more than any previous dermatology vision‑language corpus—covering **390 skin conditions** and **130 clinical concepts** organised in a four‑level expert ontology. The dataset’s rich contextual captions (mean = 41 tokens) include Fitzpatrick skin‑tone metadata and other clinical details, enabling explainable multimodal learning, zero‑/few‑shot diagnosis, cross‑modal retrieval and visual question answering in realistic settings.
+**Derm1M** brings **1,029,761 dermatological image–text pairs**—257× more than any previous dermatology vision‑language corpus—covering **390 skin conditions** and **130 clinical concepts** organised in a four‑level expert ontology. The dataset’s rich contextual captions (mean = 41 tokens) include Fitzpatrick skin‑tone metadata and other clinical details, enabling explainable multimodal learning, zero‑/few‑shot diagnosis, cross‑modal retrieval and visual question answering in realistic settings.
 
 ## 📦 What’s inside?
 
@@ -46,7 +51,7 @@ We provide two CLIP‑style checkpoints trained from scratch on **Derm1M**:
 | **DermLIP‑B/16**    | ViT‑B/16       | GPT77        | 56.1 %         | 40.7 %               |
 | **DermLIP‑PanDerm** | PanDerm‑B      | PMB256       | **58.8 %**     | **59.9 %**           |
 
-Weights, inference scripts and data loaders will be released upon paper acceptance.
+
 
 ## 📊 Key Benchmarks
 
