@@ -9,7 +9,7 @@
 > Weights, training & inference scripts, and dataset access will be released upon paper acceptance.
 
 <p align="center">
-  <img src="overview.png" alt="Derm1M overview" width="800">
+  <img src="overview.png" alt="Derm1M overview" width="770">
 </p>
 
 ## ✨ TL;DR
