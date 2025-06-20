@@ -15,7 +15,6 @@
   <img src="overview.png" alt="Derm1M overview" width="000">
 </p>
 
----
 
 | **Aspect** | Derm1M |
 |-----------|--------|
