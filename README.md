@@ -1,45 +1,44 @@
 # Derm1M: A Million‑Scale Vision‑Language Dataset Aligned with Clinical Ontology Knowledge for Dermatology
-# Derm1M: A Million‑Scale Vision‑Language Dataset Aligned with Clinical Ontology Knowledge for Dermatology
+[![ArXiv](https://img.shields.io/badge/arXiv-2503.14911-b31b1b)](https://arxiv.org/abs/2503.14911)
+[![License](https://img.shields.io/badge/License-CC%20BY--NC%204.0-green)](#🛡️-license)
+[![Cite](https://img.shields.io/badge/Cite-BibTeX-blue)](#📚-citation)
 
 > ⚠️ **Repo under construction**
 > Weights, training & inference scripts, and dataset access will be released upon paper acceptance.
 
-
 ## ✨ TL;DR
 
-**Derm1M** brings **1,029,761 dermatological image–text pairs**—257× more than any previous dermatology vision‑language corpus—covering **390 skin conditions** and **130 clinical concepts** organised in a four‑level expert ontology. The dataset’s rich contextual captions (mean = 41 tokens) include Fitzpatrick skin‑tone metadata and other clinical details, enabling explainable multimodal learning, zero‑/few‑shot diagnosis, cross‑modal retrieval and visual question answering in realistic settings.
+**Derm1M** brings **1,029,761 dermatological image–text pairs** -257× more than any previous dermatology vision‑language corpus—covering **390 skin conditions** and **130 clinical concepts** organised in a four‑level expert ontology. The dataset’s rich contextual captions (mean = 41 tokens) include metadata and other clinical contexts, enabling explainable multimodal learning, zero‑/few‑shot diagnosis, cross‑modal retrieval, and visual question answering in realistic settings.
 
 ## 📦 What’s inside?
 
 | Aspect                                                      | Derm1M                                                                                                  |
 | ----------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
 | Total pairs                                                 | **1,029,761**                                                                                           |
+｜Unique images                                               ｜**403,563**                                                                                              ｜
+｜Caption breakdown                                           ｜**Refined medical (403 563), Ontology‑based (403 563), Concept‑based (222 635)**                         ｜
 | Skin conditions                                             | **390** (4 hierarchy levels)                                                                            |
 | Clinical concepts                                           | **130**                                                                                                 |
 | Avg. caption length                                         | **41 words**                                                                                            |
-| Image sources                                               | YouTube (51 k vids), PubMed (566 k figs), Medical forums (49 k posts), Public datasets, Teaching slides |
-| Fitzpatrick tone metadata \| Present (I–VI, expert‑audited) |                                                                                                         |
+| Image sources                                               | YouTube (51 k vids), PubMed (566 k figs), Medical forums (49 k posts), Public datasets, Teaching slide                                                                                
 | Ontology                                                    | Structured JSON + graph (disease ⇌ concept ⇌ finding)                                                   |
 
 ## 🔑 Key Features
 
-* **Scale that matters** – 1 M+ multimodal examples enable training CLIP‑style encoders from scratch or adapting large vision‑language models.
-* **Comprehensive coverage** – 390 conditions span inflammatory, infectious, neoplastic and genodermatoses, mirroring real‑world prevalence.
-* **Rich context & concepts** – Descriptions embed history, symptoms, anatomic sites, Fitzpatrick tone and 130 physician‑understandable concepts for trustworthy reasoning.
-* **Expert‑curated ontology** – Four board‑certified dermatologists built a hierarchical knowledge graph to supervise multi‑granular learning.
-* **Benchmark‑ready splits** – Standard train/val/test splits plus 8 downstream datasets for plug‑and‑play evaluation.
+* **Scale that matters** – 1 M+ image-text pairs enable training CLIP‑style vision-language models for dermatology.
+* **Comprehensive coverage** – 390 conditions span inflammatory, infectious, neoplastic, and genodermatoses, mirroring real‑world prevalence.
+* **Rich context & concepts** – Descriptions embed metadata and 130 physician‑understandable concepts for trustworthy reasoning.
+* **Expert‑curated ontology** – Four board‑certified dermatologists built a hierarchical ontology to supervise multi‑granular learning.
+* **Benchmark‑ready splits** – Standard benchmark comprising 8 downstream datasets for plug‑and‑play evaluation.
 
 ## 🏗️ Repository Layout
 
 ```text
 dataset_root/
 ├── images/                # JPEG & PNG images
-├── captions.jsonl         # text + meta per image
+├── captions.csv          # text + meta per image
 ├── ontology.json          # disease & concept hierarchy
-├── splits/                # train/val/test indices
-└── docs/
-    ├── dataset_card.md
-    └── LICENSE
+├── splits/                # train/val indices
 ```
 
 ## 🚀 Pre‑trained Models: **DermLIP**
@@ -57,27 +56,23 @@ We provide two CLIP‑style checkpoints trained from scratch on **Derm1M**:
 
 | Task                                       | Metric    | DermLIP‑PanDerm |  Best Prior SOTA  |       Δ      |
 | :----------------------------------------- | :-------- | :-------------: | :---------------: | :----------: |
-| Zero‑shot classification (avg. 4 datasets) | Accuracy  |    **58.8 %**   | BiomedCLIP 45.0 % | **+13.8 pp** |
+| Zero‑shot classification (avg. 4 datasets) | Accuracy  |    **58.8 %**   | BiomedCLIP 44.1 % | **+14.7 pp** |
 | Few‑shot (1 % labels) linear probe         | Accuracy  |    **58.6 %**   |    MONET 53.0 %   |  **+5.6 pp** |
 | Cross‑modal retrieval (SkinCAP)            | R\@10 I→T |    **20.2 %**   |    MONET 14.2 %   |  **+6.0 pp** |
 
 *All metrics are taken directly from Tables 2–4 of the Derm1M paper.*
 
-
-
 ## 💾 Data Access
 
-The dataset is undergoing final ethical review and will be released for **non‑commercial research under CC BY‑NC‑4.0**. Join the [wait‑list](https://forms.gle/derm1m‑access) or watch this repo for updates.
+The dataset is undergoing final review and will be released for **non‑commercial research under CC BY‑NC‑4.0**. Join the [wait‑list](https://forms.gle/derm1m‑access) or watch this repo for updates.
 
 ## 📝 Getting Started
 
 ```bash
 git clone https://github.com/SiyuanYan1/Derm1M.git
 conda env create -f environment.yml
-python demo_clip_inference.py --image examples/lesion.jpg --topk 5
 ```
 
-See the [`docs`](docs/) folder for the data loader, ontology parser, and downstream task examples.
 
 ## 📚 Citation
 
@@ -101,6 +96,6 @@ Derm1M is released under the **Creative Commons Attribution‑NonCommercial 4.0 
 
 ## 🙏 Acknowledgements
 
-We thank the ISIC archive, DermNetNZ, medical educators on YouTube, and the volunteer dermatologists whose expertise made Derm1M possible.
+We thank the
 
 
