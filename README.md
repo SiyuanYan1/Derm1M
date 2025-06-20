@@ -25,6 +25,7 @@
 | **Ontology structure**     | Structured JSON + graph (disease ⇌ concept ⇌ finding)                                                                                     |
 
 
+
 ## 🔑 Key Features
 
 * **Scale that matters** – 1 M+ image-text pairs enable training CLIP‑style vision-language models for dermatology.
