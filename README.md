@@ -5,7 +5,7 @@
 The dataset and code will be publicly available upon acceptance.
 
 
-![alt text](overview.pdf)
+![Overview of Derm1M Dataset](overview.png)
 
 ## Citation
 
