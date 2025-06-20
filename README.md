@@ -11,20 +11,18 @@
 
 **Derm1M** brings **1,029,761 dermatological image–text pairs** -257× more than any previous dermatology vision‑language corpus—covering **390 skin conditions** and **130 clinical concepts** organised in a four‑level expert ontology. The dataset’s rich contextual captions (mean = 41 tokens) include metadata and other clinical contexts, enabling explainable multimodal learning, zero‑/few‑shot diagnosis, cross‑modal retrieval, and visual question answering in realistic settings.
 
-## 📦 What’s inside?
-| **Aspect**                   | **Derm1M**                                                                                                                                   |
-| ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Total image–text pairs**   | **1,029,761**                                                                                                                                |
-| **Unique images**            | **403,563**                                                                                                                                  |
-| **Refined medical captions** | **403,563**                                                                                                                                  |
-| **Ontology-based captions**  | **403,563**                                                                                                                                  |
-| **Concept-based captions**   | **222,635**                                                                                                                                  |
-| **Skin conditions**          | **390** (4-level ontology)                                                                                                                   |
-| **Clinical concepts**        | **130**                                                                                                                                      |
-| **Average caption length**   | **≈ 41 words**                                                                                                                               |
-| **Image sources**            | YouTube (\~ 51 k videos), PubMed (\~ 566 k figures), medical forums (\~ 49 k posts), public dermatology datasets, teaching-slide collections |
-| **Ontology structure**       | Structured JSON + graph (disease ⇌ concept ⇌ finding)                                                                                        |
-
+| Aspect                   | Derm1M                                                                                                                                    |
+| ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| Total image–text pairs   | 1,029,761                                                                                                                                 |
+| Unique images            | 403,563                                                                                                                                   |
+| Refined medical captions | 403,563                                                                                                                                   |
+| Ontology-based captions  | 403,563                                                                                                                                   |
+| Concept-based captions   | 222,635                                                                                                                                   |
+| Skin conditions          | 390 (4-level ontology)                                                                                                                    |
+| Clinical concepts        | 130                                                                                                                                       |
+| Average caption length   | ≈ 41 words                                                                                                                                |
+| Image sources            | YouTube (\~51 k videos), PubMed (\~566 k figures), medical forums (\~49 k posts), public dermatology datasets, teaching-slide collections |
+| Ontology structure       | Structured JSON + graph (disease ⇌ concept ⇌ finding)                                                                                     |
 
 ## 🔑 Key Features
 
