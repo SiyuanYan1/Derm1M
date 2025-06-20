@@ -4,20 +4,17 @@
 [![Cite](https://img.shields.io/badge/Cite-BibTeX-blue)](#citation)
 
 
-
-
 > ⚠️ **Repo under construction**
 
 > Weights, training & inference scripts, and dataset access will be released upon paper acceptance.
 
-
-## ✨ TL;DR
-
-**Derm1M** brings **1,029,761 dermatological image–text pairs** -257× more than any previous dermatology vision‑language corpus—covering **390 skin conditions** and **130 clinical concepts** organised in a four‑level expert ontology. The dataset’s rich contextual captions (mean = 41 tokens) include metadata and other clinical contexts, enabling explainable multimodal learning, zero‑/few‑shot diagnosis, cross‑modal retrieval, and visual question answering in realistic settings.
 <p align="center">
   <img src="overview.png" alt="Derm1M overview" width="800">
 </p>
 
+## ✨ TL;DR
+
+**Derm1M** brings **1,029,761 dermatological image–text pairs** -257× more than any previous dermatology vision‑language corpus—covering **390 skin conditions** and **130 clinical concepts** organised in a four‑level expert ontology. The dataset’s rich contextual captions (mean = 41 tokens) include metadata and other clinical contexts, enabling explainable multimodal learning, zero‑/few‑shot diagnosis, cross‑modal retrieval, and visual question answering in realistic settings.
 
 | **Aspect**                   | Derm1M                                                                                                                                    |
 | ---------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
