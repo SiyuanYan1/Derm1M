@@ -7,9 +7,6 @@
 
 > Weights, training & inference scripts, and dataset access will be released upon paper acceptance.
 
-<p align="center">
-  <img src="overview.png" alt="Derm1M overview" width="800">
-</p>
 
 ## ✨ TL;DR
 
@@ -28,6 +25,9 @@
 | **Image sources**            | YouTube (\~51 k videos), PubMed (\~566 k figures), medical forums (\~49 k posts), public dermatology datasets, teaching-slide collections |
 | **Ontology structure**       | Structured JSON + graph (disease ⇌ concept ⇌ finding)                                                                                     |
 
+<p align="center">
+  <img src="overview.png" alt="Derm1M overview" width="800">
+</p>
 
 ## 🔑 Key Features
 
