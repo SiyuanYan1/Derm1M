@@ -1,7 +1,8 @@
 # Derm1M: A Million‑Scale Vision‑Language Dataset Aligned with Clinical Ontology Knowledge for Dermatology
 [![ArXiv](https://img.shields.io/badge/arXiv-2503.14911-b31b1b)](https://arxiv.org/abs/2503.14911)
-[![License](https://img.shields.io/badge/License-CC%20BY--NC%204.0-green)](#user-content-license)
-[![Cite](https://img.shields.io/badge/Cite-BibTeX-blue)](#user-content-citation)
+[![License](https://img.shields.io/badge/License-CC%20BY--NC%204.0-green)](#license)
+[![Cite](https://img.shields.io/badge/Cite-BibTeX-blue)](#citation)
+
 
 
 
@@ -83,7 +84,9 @@ conda env create -f environment.yml
 ```
 
 
+<a id="citation"></a>
 ## 📚 Citation
+
 
 If you find our work useful, please cite:
 
@@ -108,7 +111,9 @@ If you find our work useful, please cite:
 }
 ```
 
+<a id="license"></a>
 ## 🛡️ License
+
 
 Derm1M is released under the **Creative Commons Attribution‑NonCommercial 4.0 International** license. Commercial use requires separate permission.
 
