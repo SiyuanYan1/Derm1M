@@ -4,6 +4,7 @@
 [![Cite](https://img.shields.io/badge/Cite-BibTeX-blue)](#📚-citation)
 
 > ⚠️ **Repo under construction**
+
 > Weights, training & inference scripts, and dataset access will be released upon paper acceptance.
 
 ## ✨ TL;DR
@@ -12,16 +13,17 @@
 
 ## 📦 What’s inside?
 
-| Aspect                                                      | Derm1M                                                                                                  |
-| ----------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| Total pairs                                                 | **1,029,761**                                                                                           |
-｜Unique images                                               ｜**403,563**                                                                                              ｜
-｜Caption breakdown                                           ｜**Refined medical (403 563), Ontology‑based (403 563), Concept‑based (222 635)**                         ｜
-| Skin conditions                                             | **390** (4 hierarchy levels)                                                                            |
-| Clinical concepts                                           | **130**                                                                                                 |
-| Avg. caption length                                         | **41 words**                                                                                            |
-| Image sources                                               | YouTube (51 k vids), PubMed (566 k figs), Medical forums (49 k posts), Public datasets, Teaching slide                                                                                
-| Ontology                                                    | Structured JSON + graph (disease ⇌ concept ⇌ finding)                                                   |
+| **Aspect**                 | **Derm1M**                                                                                                                                |
+| -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| **Total image–text pairs** | **1,029,761**                                                                                                                             |
+| **Unique images**          | **403,563**                                                                                                                               |
+| **Caption breakdown**      | **Refined medical captions:** 403,563<br>**Ontology-based captions:** 403,563<br>**Concept-based captions:** 222,635                      |
+| **Skin conditions**        | **390** (4-level ontology)                                                                                                                |
+| **Clinical concepts**      | **130**                                                                                                                                   |
+| **Average caption length** | **≈ 41 words**                                                                                                                            |
+| **Image sources**          | YouTube (≈ 51 k videos), PubMed (≈ 566 k figures), medical forums (≈ 49 k posts), public dermatology datasets, teaching-slide collections |
+| **Ontology structure**     | Structured JSON + graph (disease ⇌ concept ⇌ finding)                                                                                     |
+
 
 ## 🔑 Key Features
 
@@ -88,14 +90,20 @@ If you find our work useful, please cite:
   primaryClass = {cs.CV},
   url          = {https://arxiv.org/abs/2503.14911}
 }
+
+@article{yan2025multimodal,
+  title={A multimodal vision foundation model for clinical dermatology},
+  author={Yan, Siyuan and Yu, Zhen and Primiero, Clare and Vico-Alonso, Cristina and Wang, Zhonghua and Yang, Litao and Tschandl, Philipp and Hu, Ming and Ju, Lie and Tan, Gin and others},
+  journal={Nature Medicine},
+  pages={1--12},
+  year={2025},
+  publisher={Nature Publishing Group}
+}
 ```
 
 ## 🛡️ License
 
 Derm1M is released under the **Creative Commons Attribution‑NonCommercial 4.0 International** license. Commercial use requires separate permission.
 
-## 🙏 Acknowledgements
-
-We thank the
 
 
