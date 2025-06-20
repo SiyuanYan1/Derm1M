@@ -20,9 +20,6 @@
 |---------------------------|-----------------------------------------------------------------|
 | Total image–text pairs    | 1 029 761                                                       |
 | Unique images             | 403 563                                                        |
-| Refined medical captions  | 403 563                                                        |
-| Ontology-based captions   | 403 563                                                        |
-| Concept-based captions    | 222 635                                                        |
 | Skin conditions           | 390 (4-level ontology)                                         |
 | Clinical concepts         | 130                                                            |
 | Average caption length    | ≈ 41 words                                                     |
