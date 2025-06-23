@@ -26,13 +26,6 @@
 | Ontology structure        | Structured JSON                                                |
 | Image sources             | YouTube, PubMed, medical forums, public datasets, teaching slides |
 
-## 🔑 Key Features
-
-* **Scale that matters** – 1 M+ image-text pairs enable training CLIP‑style vision-language models for dermatology.
-* **Comprehensive coverage** – 390 conditions span inflammatory, infectious, neoplastic, and genodermatoses, mirroring real‑world prevalence.
-* **Rich context & concepts** – Descriptions embed metadata and 130 physician‑understandable concepts for trustworthy reasoning.
-* **Expert‑curated ontology** – Four board‑certified dermatologists built a hierarchical ontology to supervise multi‑granular learning.
-* **Benchmark‑ready splits** – Standard benchmark comprising 8 downstream datasets for plug‑and‑play evaluation.
 
 ## 🏗️ Repository Layout
 
