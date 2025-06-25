@@ -1,4 +1,4 @@
-# Derm1M: A Million‑Scale Vision‑Language Dataset Aligned with Clinical Ontology Knowledge for Dermatology
+# [ICCV'25] Derm1M: A Million‑Scale Vision‑Language Dataset Aligned with Clinical Ontology Knowledge for Dermatology
 [![ArXiv](https://img.shields.io/badge/arXiv-2503.14911-b31b1b)](https://arxiv.org/abs/2503.14911)
 [![License](https://img.shields.io/badge/License-CC%20BY--NC%204.0-green)](#license)
 [![Cite](https://img.shields.io/badge/Cite-BibTeX-blue)](#citation)
