@@ -6,7 +6,7 @@
 
 > ⚠️ **Repo under construction**
 
-> Weights, training & inference scripts, and dataset access will be officially released upon paper acceptance.  Early access to the dataset may be granted on a case-by-case basis by contacting siyuan.yan@monash.edu.
+> Weights, training, and inference scripts will be released gradually. Dataset access will be officially available before the conference date. Early access to the dataset may be granted on a case-by-case basis by contacting siyuan.yan@monash.edu.
 
 <p align="center">
   <img src="overview.png" alt="Derm1M overview" width="770">
