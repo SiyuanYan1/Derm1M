@@ -1,0 +1,250 @@
+{
+    "abscess": [
+        "abscess",
+        "swollen",
+        "pus-filled lump"
+    ],
+    "acuminate": [
+        "acuminate"
+    ],
+    "atrophy": [
+        "atrophic"
+    ],
+    "black": [
+        "black color",
+        "black"
+    ],
+    "blue": [
+        "blue",
+        "blue color"
+    ],
+    "brown(hyperpigmentation)": [
+        "hyperpigmented",
+        "hyperpigmentation",
+        "brown(hyperpigmentation)"
+    ],
+    "bulla": [
+        "bullae",
+        "blister"
+    ],
+    "burrow": [
+        "scabies",
+        "burrow"
+    ],
+    "comedo": [
+        "whitehead",
+        "blackhead"
+    ],
+    "crust": [
+        "dried crust",
+        "crust"
+    ],
+    "cyst": [
+        "cyst"
+    ],
+    "dome-shaped": [
+        "like dome"
+    ],
+    "erosion": [
+        "erosive",
+        "erosion",
+        "breakdown of the outer layers",
+        "impetigo"
+    ],
+    "erythema": [
+        "redness",
+        "erythematous"
+    ],
+    "excoriation": [
+        "excoriation"
+    ],
+    "exophytic/fungating": [
+        "fungating"
+    ],
+    "exudate": [
+        "exudate"
+    ],
+    "fissure": [
+        "dry and cracked skin"
+    ],
+    "flat topped": [
+        "flat topped"
+    ],
+    "friable": [
+        "friable"
+    ],
+    "gray": [
+        "gray"
+    ],
+    "induration": [
+        "edema",
+        "oedema"
+    ],
+    "lichenification": [
+        "lichenification",
+        "thickened and leathery"
+    ],
+    "macule": [
+        "freckle",
+        "macular",
+        "lentigo",
+        "macule"
+    ],
+    "nodule": [
+        "nodular",
+        "cyst",
+        "nodule"
+    ],
+    "papule": [
+        "papular"
+    ],
+    "patch": [
+        "hyperpigmented",
+        "melasma",
+        "vitiligo"
+    ],
+    "pedunculated": [
+        "pedunculated"
+    ],
+    "pigmented": [
+        "pigmented"
+    ],
+    "plaque": [
+        "plaque",
+        "dermatitis",
+        "psoriasis"
+    ],
+    "poikiloderma": [
+        "sun aging"
+    ],
+    "purple": [
+        "purple"
+    ],
+    "purpura/petechiae": [
+        "purpura"
+    ],
+    "pustule": [
+        "pustule"
+    ],
+    "salmon": [
+        "salmon patch"
+    ],
+    "scale": [
+        "flaky and scaly",
+        "scaly",
+        "hyperkeratosis"
+    ],
+    "scar": [
+        "scar",
+        "keloid scars",
+        "hypertrophic scars",
+        "contractures scars",
+        "acnescars scars"
+    ],
+    "sclerosis": [
+        "scleroderma",
+        "crest syndrome"
+    ],
+    "telangiectasia": [
+        "dilated or broken blood vessels"
+    ],
+    "translucent": [
+        "translucent",
+        "this bump is translucent"
+    ],
+    "ulcer": [
+        "ulcer",
+        "ulcerated"
+    ],
+    "umbilicated": [
+        "umbilicated"
+    ],
+    "vesicle": [
+        "vesicle",
+        "fluid-containing"
+    ],
+    "warty/papillomatous": [
+        "warty and papillomatous"
+    ],
+    "wheal": [
+        "urticaria"
+    ],
+    "white(hypopigmentation)": [
+        "white(hypopigmentation)",
+        "hypopigmentation"
+    ],
+    "xerosis": [
+        "dry skin",
+        "abnormally dry skin",
+        "xerosis"
+    ],
+    "yellow": [
+        "yellow"
+    ],
+    "pigment network": [
+        "pigment network",
+        "intersecting brown lines"
+    ],
+    "regression structures": [
+        "regression structures"
+    ],
+    "regression structure": [
+        "regression structure"
+    ],
+    "pigmentation": [
+        "pigmentation",
+        "pigmented",
+        "pigmented lesion",
+        "colored lesion"
+    ],
+    "blue whitish veil": [
+        "blue whitish veil",
+        "blue white veil"
+    ],
+    "vascular structures": [
+        "vascular structures",
+        "hairpin vessels",
+        "comma vessels",
+        "dotted vessels",
+        "arborizing vessels"
+    ],
+    "streaks": [
+        "streaks",
+        "starburst",
+        "linear patterns",
+        "radially oriented linear projections",
+        "regular",
+        "pigmented linear extensions",
+        "irregular",
+        "pigmented linear extensions"
+    ],
+    "dots and globules": [
+        "black dots and globules",
+        "brown dots and globules",
+        "scattered globules"
+    ],
+    "purple pen": [
+        "purple pen"
+    ],
+    "nail": [
+        "nail"
+    ],
+    "pink": [
+        "pinkish"
+    ],
+    "red": [
+        "red"
+    ],
+    "gel": [
+        "gel"
+    ],
+    "hair": [
+        "hair"
+    ],
+    "orange sticker": [
+        "orange sticker"
+    ],
+    "dermoscope border": [
+        "dermoscopy"
+    ]
+}
