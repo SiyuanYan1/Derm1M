@@ -14,6 +14,14 @@
   <img src="assets/overview.png" alt="Derm1M overview" width="770">
 </p>
 
+## Updates
+
+- [x] 01/07/2025: Released DermLIP and DermLIP-PanDerm model weights on Hugging Face.
+- [x] 03/07/2025: Released evaluation code for downstream tasks.
+- [ ] Training code (coming soon)
+- [ ] Dataset (coming soon)
+
+
 ## ✨ TL;DR
 
 **Derm1M** brings **1,029,761 dermatological image–text pairs** -257× more than any previous dermatology vision‑language corpus—covering **390 skin conditions** and **130 clinical concepts** organised in a four‑level expert ontology. The dataset’s rich contextual captions (mean = 41 tokens) include metadata and other clinical contexts, enabling explainable multimodal learning, zero‑/few‑shot diagnosis, cross‑modal retrieval, and visual question answering in realistic settings.
