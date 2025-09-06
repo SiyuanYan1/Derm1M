@@ -140,7 +140,6 @@ class SimpleTokenizer(object):
             reduction_mask: str = '',
             cache_dir=None
     ):
-        print(f'tokenizer bpe_path: {bpe_path}')
         self.byte_encoder = bytes_to_unicode()
         self.byte_decoder = {v: k for k, v in self.byte_encoder.items()}
         merges = gzip.open(bpe_path).read().decode("utf-8").split('\n')
