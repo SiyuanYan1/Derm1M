@@ -53,7 +53,7 @@ class Derm_Dataset(Dataset):
         self.image_key = image_key
 
     def __getitem__(self, index):
-        im_path = self.df.iloc[index][self.image_key]
+        im_path = self.root + self.df.iloc[index][self.image_key]
         
         x = Image.open(im_path).convert('RGB')
 

@@ -18,7 +18,7 @@
 
 - [x] 01/07/2025: Released DermLIP and DermLIP-PanDerm model weights on Hugging Face.
 - [x] 03/07/2025: Released evaluation code for downstream tasks.
-- [ ] Training code (coming soon)
+- [x] 07/09/2025: Released Training code
 - [ ] Dataset (coming soon)
 
 
@@ -83,6 +83,166 @@ conda activate Derm1M
 pip install -r requirements.txt
 ```
 
+## Training
+We provide training scripts for two best performance DermLIP models. All training uses the Derm1M dataset with data augmentation and supports distributed training.
+
+<details>
+<summary><strong>PanDerm-base-w-PubMed-256</strong></summary>
+
+
+Train the PanDerm-base model initialized with PubMed pre-trained weights:
+
+```bash
+# Run the training script
+bash script/pretrain/PanDerm-base-w-PubMed-256.sh
+
+# Or run directly:
+python src/main.py \
+    --save-frequency 1 \
+    --zeroshot-frequency 1 \
+    --report-to wandb \
+    --wandb-project-name iccv_benchmark \
+    --train-data="data/derm1m-training.csv"  \
+    --val-data="data/derm1m-valid.csv"  \
+    --csv-caption-key 'truncated_caption' \
+    --csv-label-key label \
+    --aug-cfg scale='(0.4, 1.0)' color_jitter='(0.32, 0.32, 0.32, 0.08)' color_jitter_prob=0.8 gray_scale_prob=0.2 \
+    --csv-img-key 'filename' \
+    --warmup 1000 \
+    --wd=0.1 \
+    --batch-size=2048 \
+    --lr=1e-4 \
+    --epochs=30 \
+    --workers=32 \
+    --model PanDerm-base-w-PubMed-256 \
+    --logs logs/ \
+    --local-loss \
+    --grad-checkpointing \
+    --dataset-resampled
+```
+</details>
+<details>
+<summary><strong>CLIP-B16 (ViT-B-16)</strong></summary>
+
+Train a CLIP-B-16 model with OpenAI pre-trained initialization:
+```bash
+# Run the training script
+bash script/pretrain/ViT-B-16.sh
+
+# Or run directly:
+python src/main.py \
+    --save-frequency 1 \
+    --zeroshot-frequency 1 \
+    --report-to wandb \
+    --wandb-project-name iccv_benchmark \
+    --train-data="data/derm1m-training.csv"  \
+    --val-data="data/derm1m-valid.csv"  \
+    --csv-caption-key 'truncated_caption' \
+    --csv-label-key label \
+    --aug-cfg scale="(0.4, 1.0)" color_jitter="(0.32, 0.32, 0.32, 0.08)" color_jitter_prob=0.8 gray_scale_prob=0.2 \
+    --csv-img-key filename \
+    --warmup 1000 \
+    --wd=0.1 \
+    --batch-size=4096 \
+    --lr=1e-4 \
+    --epochs=30 \
+    --workers=32 \
+    --model ViT-B-16 \
+    --logs logs/ \
+    --local-loss \
+    --grad-checkpointing \
+    --dataset-resampled \
+    --pretrained openai
+```
+</details>
+
+
+## Evaluation
+
+Datasets evaluated: PAD, HAM-10000, Fitzpatrick17k, Daffodil
+
+### Setup
+
+1) Download benchmark data from [Google Drive](https://drive.google.com/file/d/1w8Tf74YrHusMqbk72WQjtnninKWTCapu/view?usp=drive_link)
+2) Unzip to data folder
+The directory structure should look like:
+```bash
+data/
+├── Daffodil/
+├── derm7pt/
+├── F17K/
+├── HAM/
+├── meta/
+├── PAD/
+├── pretrain_weight/
+└── skincon/
+```
+
+### Running Evaluations
+<details>
+<summary><strong>Zero-shot Classification</strong></summary>
+Evaluate DermLIP models on multiple dermatology datasets using zero-shot classification:
+
+```bash
+# Run the zero-shot benchmark script
+bash script/zero_shot_benchmark.sh
+
+# Or run individually:
+
+# DermLIP - ViT-B-16
+python src/main.py \
+    --val-data=""  \
+    --dataset-type "csv" \
+    --batch-size=1024 \
+    --zeroshot-eval1=meta-files/zs/pad-zero-shot-test.csv \
+    --zeroshot-eval2=meta-files/zs/HAM-official-7-zero-shot-test.csv \
+    --zeroshot-eval3=meta-files/zs/f17k-113-zero-shot-test.csv \
+    --zeroshot-eval4=meta-files/zs/daffodil-5-zero-shot-test.csv \
+    --csv-label-key label \
+    --csv-img-key image_path \
+    --csv-caption-key 'truncated_caption' \
+    --model 'hf-hub:redlessone/DermLIP_ViT-B-16'
+
+# DermLIP - PanDerm-base-w-PubMed-256
+python src/main.py \
+    --val-data=""  \
+    --dataset-type "csv" \
+    --batch-size=1024 \
+    --zeroshot-eval1=meta-files/zs/pad-zero-shot-test.csv \
+    --zeroshot-eval2=meta-files/zs/HAM-official-7-zero-shot-test.csv \
+    --zeroshot-eval3=meta-files/zs/f17k-113-zero-shot-test.csv \
+    --zeroshot-eval4=meta-files/zs/daffodil-5-zero-shot-test.csv \
+    --csv-label-key label \
+    --csv-img-key image_path \
+    --csv-caption-key 'truncated_caption' \
+    --model 'hf-hub:redlessone/DermLIP_PanDerm-base-w-PubMed-256'
+```
+
+</details>
+<details>
+<summary><strong>Linear Probing</strong></summary>
+Evaluate feature quality through linear probing on downstream classification tasks:
+Key parameters in the [script](script/linear_prob_benchmark.sh #L6): Ratio of training data
+
+```bash
+# Run the linear probing benchmark script
+bash script/linear_prob_benchmark.sh
+```
+</details>
+
+<details>
+<summary><strong>Concept Annotation</strong></summary>
+
+Evaluate automatic concept annotation capabilities on clinical and dermascopic dermatology datasets:
+
+Datasets evaluated(After processing): SkinCon, Derm7pt
+
+```bash
+# Run the concept annotation benchmark script
+bash script/concept_annotation_benchmark.sh
+```
+
+</details>
 
 <a id="citation"></a>
 ## 📚 Citation

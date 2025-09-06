@@ -18,7 +18,7 @@ def get_args_parser():
                     help='csv file name')
     parser.add_argument('--image_key', default="filename" , type=str,
                     help='csv image path columns')
-    parser.add_argument('--root_path', default="/home/share/Uni_Eval/Derm7pt/images/", type=str,
+    parser.add_argument('--root_path', default="../", type=str,
                         help='image root path')
     parser.add_argument('--model', default="", type=str,
                         help='image root path')

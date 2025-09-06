@@ -1,13 +1,14 @@
 #!/bin/bash
+cd linear_probe
 rm -r linear_probing_logs/*
 models=('open_clip_hf-hub:redlessone/DermLIP_PanDerm-base-w-PubMed-256' 'open_clip_hf-hub:redlessone/DermLIP_ViT-B-16')
 datasets=('HAM' 'PAD' 'f17k-113' 'Daffodil')
 percent_data=1
 csv_paths=(
-  '../meta-files/lp/HAM-official-7-lp.csv'
-  '../meta-files/lp/pad-lp-ws0.csv'
-  '../meta-files/lp/f17k-113-lp-ws0.csv'
-  '../meta-files/lp/daffodil-5-lp.csv'
+  '../data/meta/HAM-LP.csv'
+  '../data/meta/PAD-LP.csv'
+  '../data/meta/F17K-LP.csv'
+  '../data/meta/Daffodil-LP.csv'
 )
 
 for model in "${models[@]}"; do
