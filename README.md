@@ -1,4 +1,4 @@
-# [ICCV'25] Derm1M: A Million‑Scale Vision‑Language Dataset Aligned with Clinical Ontology Knowledge for Dermatology
+# Derm1M: A Million‑Scale Vision‑Language Dataset Aligned with Clinical Ontology Knowledge for Dermatology
 [![ArXiv](https://img.shields.io/badge/arXiv-2503.14911-b31b1b)](https://arxiv.org/abs/2503.14911)
 [![License](https://img.shields.io/badge/License-CC%20BY--NC%204.0-green)](#license)
 [![Cite](https://img.shields.io/badge/Cite-BibTeX-blue)](#citation)
@@ -13,6 +13,14 @@
 <p align="center">
   <img src="assets/overview.png" alt="Derm1M overview" width="770">
 </p>
+
+## Updates
+
+- [x] 01/07/2025: Released DermLIP and DermLIP-PanDerm model weights on Hugging Face.
+- [x] 03/07/2025: Released evaluation code for downstream tasks.
+- [ ] Training code (coming soon)
+- [ ] Dataset (coming soon)
+
 
 ## ✨ TL;DR
 
