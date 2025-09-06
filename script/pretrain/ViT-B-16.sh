@@ -1,0 +1,23 @@
+python src/main.py \
+    --save-frequency 1 \
+    --zeroshot-frequency 1 \
+    --report-to wandb \
+    --wandb-project-name iccv_benchmark \
+    --train-data="data/derm1m-training.csv"  \
+    --val-data="data/derm1m-valid.csv"  \
+    --csv-caption-key 'truncated_caption' \
+    --csv-label-key label \
+    --aug-cfg scale="(0.4, 1.0)" color_jitter="(0.32, 0.32, 0.32, 0.08)" color_jitter_prob=0.8 gray_scale_prob=0.2 \
+    --csv-img-key filename \
+    --warmup 1000 \
+    --wd=0.1 \
+    --batch-size=4096 \
+    --lr=1e-4 \
+    --epochs=30 \
+    --workers=32 \
+    --model ViT-B-16 \
+    --logs logs/ \
+    --local-loss \
+    --grad-checkpointing \
+    --dataset-resampled \
+    --pretrained openai

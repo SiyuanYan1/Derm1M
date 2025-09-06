@@ -5,7 +5,7 @@
         "layers": 12,
         "width": 768,
         "patch_size": 16,
-        "pretrain_path": null
+        "pretrain_path": "data/pretrain_weight/panderm-base-vit.pth"
     },
     "text_cfg": {
         "context_length": 256,

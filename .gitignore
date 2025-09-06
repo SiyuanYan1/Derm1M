@@ -7,6 +7,7 @@ notebooks/
 data/
 src/wandb
 linear_probe/linear_probing_logs
+wandb
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -217,3 +218,4 @@ marimo/_lsp/
 __marimo__/
 meta-files/public_df_valid.csv
 pretrain_weight/2025_05_29-15_47_12-model_PanDerm-large-v2-w-PubMed-256-lr_5e-05-b_1024-j_8-p_amp_pad_e6.pt
+MAKE_OHCL_training_v4.csv
