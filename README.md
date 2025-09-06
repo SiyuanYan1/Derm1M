@@ -222,7 +222,7 @@ python src/main.py \
 <details>
 <summary><strong>Linear Probing</strong></summary>
 Evaluate feature quality through linear probing on downstream classification tasks:
-Key parameters in the [script](script/linear_prob_benchmark.sh #L6): Ratio of training data
+Key parameters in the [script](script/linear_prob_benchmark.sh#L6): Ratio of training data
 
 ```bash
 # Run the linear probing benchmark script
