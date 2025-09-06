@@ -90,7 +90,7 @@ We provide training scripts for two best performance DermLIP models. All trainin
 <summary><strong>PanDerm-base-w-PubMed-256</strong></summary>
 
 
-Train the PanDerm-base model initialized with PubMed pre-trained weights:
+Train the PanDerm-base model with PubMed pre-trained text encoder:
 
 ```bash
 # Run the training script
