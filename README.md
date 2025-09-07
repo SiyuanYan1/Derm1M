@@ -194,10 +194,10 @@ python src/main.py \
     --val-data=""  \
     --dataset-type "csv" \
     --batch-size=1024 \
-    --zeroshot-eval1=meta-files/zs/pad-zero-shot-test.csv \
-    --zeroshot-eval2=meta-files/zs/HAM-official-7-zero-shot-test.csv \
-    --zeroshot-eval3=meta-files/zs/f17k-113-zero-shot-test.csv \
-    --zeroshot-eval4=meta-files/zs/daffodil-5-zero-shot-test.csv \
+    --zeroshot-eval1=data/meta/PAD-ZS.csv \
+    --zeroshot-eval2=data/meta/HAM-ZS.csv \
+    --zeroshot-eval3=data/meta/F17K-ZS.csv \
+    --zeroshot-eval4=data/meta/Daffodil-ZS.csv \
     --csv-label-key label \
     --csv-img-key image_path \
     --csv-caption-key 'truncated_caption' \
@@ -208,10 +208,10 @@ python src/main.py \
     --val-data=""  \
     --dataset-type "csv" \
     --batch-size=1024 \
-    --zeroshot-eval1=meta-files/zs/pad-zero-shot-test.csv \
-    --zeroshot-eval2=meta-files/zs/HAM-official-7-zero-shot-test.csv \
-    --zeroshot-eval3=meta-files/zs/f17k-113-zero-shot-test.csv \
-    --zeroshot-eval4=meta-files/zs/daffodil-5-zero-shot-test.csv \
+    --zeroshot-eval1=data/meta/PAD-ZS.csv \
+    --zeroshot-eval2=data/meta/HAM-ZS.csv \
+    --zeroshot-eval3=data/meta/F17K-ZS.csv \
+    --zeroshot-eval4=data/meta/Daffodil-ZS.csv \
     --csv-label-key label \
     --csv-img-key image_path \
     --csv-caption-key 'truncated_caption' \
