@@ -246,6 +246,19 @@ bash script/concept_annotation_benchmark.sh
 
 </details>
 
+</details>
+<details>
+<summary><strong>Cross-modal Retrieval</strong></summary>
+Evaluate cross-modal retrieval performance between images and text descriptions:
+Datasets evaluated: Derm1M-Hold Out Dataset, SkinCAP
+
+```bash
+# Run the cross-modal retrieval benchmark script
+bash script/cross_retrieval.sh
+```
+
+This script evaluates three models across two datasets for image-text retrieval tasks:
+
 <a id="citation"></a>
 ## 📚 Citation
 
