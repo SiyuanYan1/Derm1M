@@ -163,7 +163,7 @@ Datasets evaluated: PAD, HAM-10000, Fitzpatrick17k, Daffodil
 
 ### Setup
 
-1) Download benchmark data from [Google Drive](https://drive.google.com/file/d/1w8Tf74YrHusMqbk72WQjtnninKWTCapu/view?usp=drive_link)
+1) Download benchmark data from [Google Drive](https://drive.google.com/file/d/1w8Tf74YrHusMqbk72WQjtnninKWTCapu/view?usp=sharing)
 2) Unzip to data folder
 The directory structure should look like:
 ```bash
