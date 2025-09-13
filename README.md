@@ -174,8 +174,7 @@ data/
 ```
 
 ### Running Evaluations
-<details>
-<summary><strong>Zero-shot Classification</strong></summary>
+
 Evaluate DermLIP models on multiple dermatology datasets using zero-shot classification:
 
 ```bash
@@ -213,9 +212,7 @@ python src/main.py \
     --model 'hf-hub:redlessone/DermLIP_PanDerm-base-w-PubMed-256'
 ```
 
-</details>
-<details>
-<summary><strong>Linear Probing</strong></summary>
+
 Evaluate feature quality through linear probing on downstream classification tasks:
 
 Key parameters in the [script](https://github.com/SiyuanYan1/Derm1M/blob/main/script/linear_prob_benchmark.sh#L6): Ratio of training data
@@ -239,11 +236,7 @@ Datasets evaluated(After processing): SkinCon, Derm7pt
 bash script/concept_annotation_benchmark.sh
 ```
 
-</details>
 
-</details>
-<details>
-<summary><strong>Cross-modal Retrieval</strong></summary>
 Evaluate cross-modal retrieval performance between images and text descriptions:
 Datasets evaluated: Derm1M-Hold Out Dataset, SkinCAP
 
@@ -252,7 +245,7 @@ This script evaluates three models across two datasets for image-text retrieval 
 # Run the cross-modal retrieval benchmark script
 bash script/cross_retrieval.sh
 ```
-</details>
+
 
 <a id="citation"></a>
 ## 📚 Citation
