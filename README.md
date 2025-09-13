@@ -175,7 +175,7 @@ data/
 
 ### Running Evaluations
 
-## Zero-shot Classification
+### Zero-shot Classification
 
 Evaluate DermLIP models on multiple dermatology datasets using zero-shot classification:
 
@@ -214,7 +214,7 @@ python src/main.py \
     --model 'hf-hub:redlessone/DermLIP_PanDerm-base-w-PubMed-256'
 ```
 
-
+### Linear Probing
 Evaluate feature quality through linear probing on downstream classification tasks:
 
 Key parameters in the [script](https://github.com/SiyuanYan1/Derm1M/blob/main/script/linear_prob_benchmark.sh#L6): Ratio of training data
@@ -224,7 +224,7 @@ Key parameters in the [script](https://github.com/SiyuanYan1/Derm1M/blob/main/sc
 # Run the linear probing benchmark script
 bash script/linear_prob_benchmark.sh
 ```
-
+### Concept Annotation
 
 Evaluate automatic concept annotation capabilities on clinical and dermascopic dermatology datasets:
 
@@ -235,6 +235,7 @@ Datasets evaluated(After processing): SkinCon, Derm7pt
 bash script/concept_annotation_benchmark.sh
 ```
 
+### Cross-modal Retrieval
 
 Evaluate cross-modal retrieval performance between images and text descriptions:
 Datasets evaluated: Derm1M-Hold Out Dataset, SkinCAP
