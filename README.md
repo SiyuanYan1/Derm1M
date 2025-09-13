@@ -175,6 +175,8 @@ data/
 
 ### Running Evaluations
 
+## Zero-shot Classification
+
 Evaluate DermLIP models on multiple dermatology datasets using zero-shot classification:
 
 ```bash
