@@ -86,9 +86,6 @@ pip install -r requirements.txt
 ## Training
 We provide training scripts for two best performance DermLIP models. All training uses the Derm1M dataset with data augmentation and supports distributed training.
 
-<details>
-<summary><strong>PanDerm-base-w-PubMed-256</strong></summary>
-
 
 Train the PanDerm-base model with PubMed pre-trained text encoder:
 
@@ -120,9 +117,7 @@ python src/main.py \
     --grad-checkpointing \
     --dataset-resampled
 ```
-</details>
-<details>
-<summary><strong>CLIP-B16 (ViT-B-16)</strong></summary>
+
 
 Train a CLIP-B-16 model with OpenAI pre-trained initialization:
 ```bash
@@ -154,7 +149,7 @@ python src/main.py \
     --dataset-resampled \
     --pretrained openai
 ```
-</details>
+
 
 
 ## Evaluation
