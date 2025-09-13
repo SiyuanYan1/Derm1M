@@ -222,10 +222,7 @@ Key parameters in the [script](https://github.com/SiyuanYan1/Derm1M/blob/main/sc
 # Run the linear probing benchmark script
 bash script/linear_prob_benchmark.sh
 ```
-</details>
 
-<details>
-<summary><strong>Concept Annotation</strong></summary>
 
 Evaluate automatic concept annotation capabilities on clinical and dermascopic dermatology datasets:
 
