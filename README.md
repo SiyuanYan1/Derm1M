@@ -20,6 +20,7 @@
 - [x] 03/07/2025: Released evaluation code for downstream tasks.
 - [x] 07/09/2025: Released Training code
 - [ ] Dataset (coming soon)
+- [ ] Derm1M Instruct: A multimodal instruction dataset designed for training and evaluating Multimodal Large Language Models (MLLMs), to be released in the future
 
 
 ## ✨ TL;DR
