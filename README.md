@@ -11,7 +11,7 @@
 > Please contact siyuan.yan@monash.edu if you have questions.
 
 <p align="center">
-  <img src="assets/ICCV_Derm1M_poster.png" alt="Derm1M overview" width="770">
+  <img src="assets/ICCV_Derm1M_poster.png" alt="Derm1M overview">
 </p>
 
 ## Updates
