@@ -42,10 +42,11 @@
 
 ```text
 dataset_root/
-├── images/                # JPEG & PNG images
-├── captions.csv          # text + meta per image
-├── ontology.json          # disease & concept hierarchy
-├── splits/                # train/val indices
+├── images/                   # JPEG & PNG images
+├── Derm1M_v2_pretrain.csv    # text + meta per image for model pretraining
+├── Derm1M_v2_validation.csv  # text + meta per image for model validation
+├── concept.csv               # extracted concept annotations per image
+├── ontology.json             # skin disease hierarchy
 ```
 
 ## 🚀 Pre‑trained Models: **DermLIP**
