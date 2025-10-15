@@ -2,9 +2,9 @@
 [![ArXiv](https://img.shields.io/badge/arXiv-2503.14911-b31b1b)](https://arxiv.org/abs/2503.14911)
 [![License](https://img.shields.io/badge/License-CC%20BY--NC%204.0-green)](#license)
 [![Cite](https://img.shields.io/badge/Cite-BibTeX-blue)](#citation)
-[![Hugging Face Dataset](https://img.shields.io/badge/🤗%20Hugging%20Face-Derm1M-yellow)](https://huggingface.co/datasets/redlessone/Derm1M)
-[![Hugging Face Model](https://img.shields.io/badge/🤗%20Hugging%20Face-DermLIP--ViT--B--16-yellow)](https://huggingface.co/redlessone/DermLIP_ViT-B-16)
-[![Hugging Face Model](https://img.shields.io/badge/🤗%20Hugging%20Face-DermLIP--PanDerm--base--w--PubMed--256-yellow)](https://huggingface.co/redlessone/DermLIP_PanDerm-base-w-PubMed-256)
+[![Dataset](https://img.shields.io/badge/Dataset-Derm1M-yellow)](https://huggingface.co/datasets/redlessone/Derm1M)
+[![Model 1](https://img.shields.io/badge/Model%201-DermLIP--ViT--B--16-yellow)](https://huggingface.co/redlessone/DermLIP_ViT-B-16)
+[![Model 2](https://img.shields.io/badge/Model%202-DermLIP--PanDerm--base--w--PubMed--256-yellow)](https://huggingface.co/redlessone/DermLIP_PanDerm-base-w-PubMed-256)
 
 
 ## Updates
