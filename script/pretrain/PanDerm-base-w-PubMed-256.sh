@@ -2,9 +2,9 @@ python src/main.py \
     --save-frequency 1 \
     --zeroshot-frequency 1 \
     --report-to wandb \
-    --wandb-project-name iccv_benchmark \
-    --train-data="data/derm1m-training.csv"  \
-    --val-data="data/derm1m-valid.csv"  \
+    --wandb-project-name Derm1M_benchmark \
+    --train-data="/path/to/your/Derm1M-Folder/Derm1M_v2_pretrain.csv"  \
+    --val-data="/path/to/your/Derm1M-Folder/Derm1M_v2_validation.csv"  \
     --csv-caption-key 'truncated_caption' \
     --csv-label-key label \
     --aug-cfg scale='(0.4, 1.0)' color_jitter='(0.32, 0.32, 0.32, 0.08)' color_jitter_prob=0.8 gray_scale_prob=0.2 \
@@ -19,4 +19,5 @@ python src/main.py \
     --logs logs/ \
     --local-loss \
     --grad-checkpointing \
-    --dataset-resampled
+    --dataset-resampled \
+    --parent-path '/path/to/your/Derm1M-Folder/'

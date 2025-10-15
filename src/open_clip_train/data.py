@@ -29,7 +29,7 @@ except ImportError:
     hvd = None
 
 class CsvDataset(Dataset):
-    def __init__(self, input_filename, transforms, img_key, caption_key, sep="\t", tokenizer=None):
+    def __init__(self, input_filename, transforms, img_key, caption_key, sep="\t", tokenizer=None, parent_path=''):
         logging.debug(f'Loading csv data from {input_filename}.')
         df = pd.read_csv(input_filename)
 
@@ -37,6 +37,7 @@ class CsvDataset(Dataset):
         self.captions = df[caption_key].tolist()
         self.transforms = transforms
         self.sources = df['source'].tolist()
+        self.parent_path = parent_path
         logging.debug('Done loading data.')
 
         self.tokenize = tokenizer
@@ -45,7 +46,7 @@ class CsvDataset(Dataset):
         return len(self.captions)
 
     def __getitem__(self, idx):
-        images = self.transforms(Image.open(str(self.images[idx])))
+        images = self.transforms(Image.open(self.parent_path + str(self.images[idx])))
         texts = self.tokenize([str(self.captions[idx])])[0]
         return images, texts
 
@@ -455,7 +456,8 @@ def get_csv_dataset(args, preprocess_fn, is_train, epoch=0, tokenizer=None):
         img_key=args.csv_img_key,
         caption_key=args.csv_caption_key,
         sep=args.csv_separator,
-        tokenizer=tokenizer
+        tokenizer=tokenizer,
+        parent_path=args.parent_path
     )
     num_samples = len(dataset)
 
