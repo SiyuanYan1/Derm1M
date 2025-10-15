@@ -7,21 +7,17 @@
 [![Hugging Face Model](https://img.shields.io/badge/🤗%20Hugging%20Face-DermLIP--PanDerm--base--w--PubMed--256-yellow)](https://huggingface.co/redlessone/DermLIP_PanDerm-base-w-PubMed-256)
 
 
-> ⚠️ **Repo under construction**:
-> Dataset access will be officially available before the conference date.
-> Please contact siyuan.yan@monash.edu if you have questions.
-
-<p align="center">
-  <img src="assets/ICCV_Derm1M_poster.png" alt="Derm1M overview" width="800">
-</p>
-
 ## Updates
 
 - [x] 01/07/2025: Released DermLIP and DermLIP-PanDerm model weights on Hugging Face.
 - [x] 03/07/2025: Released evaluation code for downstream tasks.
 - [x] 07/09/2025: Released Training code
-- [ ] Dataset (coming soon)
-- [ ] Derm1M Instruct: A multimodal instruction dataset designed for training and evaluating Multimodal Large Language Models (MLLMs), to be released in the future
+- [x] 15/10/2025: Derm1M dataset is public now
+
+<p align="center">
+  <img src="assets/ICCV_Derm1M_poster.png" alt="Derm1M overview" width="800">
+</p>
+
 
 
 ## ✨ TL;DR
