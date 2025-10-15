@@ -12,7 +12,7 @@
 - [x] 01/07/2025: Released DermLIP and DermLIP-PanDerm model weights on Hugging Face.
 - [x] 03/07/2025: Released evaluation code for downstream tasks.
 - [x] 07/09/2025: Released Training code
-- [x] 15/10/2025: Derm1M dataset is public now
+- [x] 15/10/2025: Derm1M dataset is **public** now
 
 <p align="center">
   <img src="assets/ICCV_Derm1M_poster.png" alt="Derm1M overview" width="800">
