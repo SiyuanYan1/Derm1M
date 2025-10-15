@@ -15,7 +15,7 @@
 - [x] 15/10/2025: Derm1M dataset is **public** now
 
 <p align="center">
-  <img src="assets/ICCV_Derm1M_poster.png" alt="Derm1M overview" width="800">
+  <img src="assets/ICCV_Derm1M_poster.png" alt="Derm1M overview" width="850">
 </p>
 
 
