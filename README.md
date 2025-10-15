@@ -34,6 +34,9 @@
 | Ontology structure        | Structured JSON                                                |
 | Image sources             | YouTube, PubMed, medical forums, public datasets, teaching slides |
 
+## 💾 Data Access
+
+The dataset is available on [Hugging Face](https://huggingface.co/datasets/redlessone/Derm1M) for **non-commercial research purposes under the CC BY-NC-4.0 license**. This release differs slightly from the ICCV version, offering improved image quality while preserving comparable model performance.
 
 ## 🏗️ Repository Layout
 
@@ -67,9 +70,6 @@ We provide two CLIP‑style checkpoints trained from scratch on **Derm1M**:
 
 *All metrics are taken directly from Tables 2–4 of the Derm1M paper.*
 
-## 💾 Data Access
-
-The dataset is undergoing final review and will be released for **non‑commercial research under CC BY‑NC‑4.0**. Join the [wait‑list](https://forms.gle/derm1m‑access) or watch this repo for updates.
 
 ## 📝 Getting Started
 
