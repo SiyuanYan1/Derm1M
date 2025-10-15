@@ -42,7 +42,7 @@ The dataset is available on [Hugging Face](https://huggingface.co/datasets/redle
 
 ```text
 dataset_root/
-├── images/                   # JPEG & PNG images
+├── XXX/                   # unzip all zip files
 ├── Derm1M_v2_pretrain.csv    # text + meta per image for model pretraining
 ├── Derm1M_v2_validation.csv  # text + meta per image for model validation
 ├── concept.csv               # extracted concept annotations per image
