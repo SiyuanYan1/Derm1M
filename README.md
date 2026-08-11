@@ -12,7 +12,7 @@
 - [x] 03/07/2025: Released evaluation code for downstream tasks
 - [x] 07/09/2025: Released training code
 - [x] 15/10/2025: Derm1M dataset is **public** now
-- [ ] **Derm1M_AgentAug**: Enhanced version with multi-agent re-captioning system will be released
+- [ ] **Derm1M_AgentAug**: Enhanced version with multi-agent re-captioning system is released now: https://huggingface.co/datasets/Xieji-Li/Derm1M-AgentAug
 - [ ] **Derm1M_Instruct**: 300K high-quality instruction and benchmark data with diverse task types will be released
 
 <p align="center">
